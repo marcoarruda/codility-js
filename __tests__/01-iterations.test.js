@@ -1,6 +1,6 @@
 const { describe, expect, test } = require('@jest/globals')
 
-const { binaryGap } = require('../../01-iterations')
+const { binaryGap } = require('../01-iterations')
 
 describe('Iterations', () => {
   test('binary gap', () => {
