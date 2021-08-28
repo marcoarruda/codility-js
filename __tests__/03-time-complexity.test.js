@@ -1,9 +1,9 @@
 const { describe, expect, test } = require('@jest/globals')
 
-const { frogJmp } = require('../../03-arrays')
+const { frogJmp } = require('../03-time-complexity')
 
 describe('frogJmp', () => {
   test('frogJmp', () => {
-    // expect(findOddNumber([9, 3, 9, 3, 9, 7, 9])).toBe(7)
+    expect(frogJmp(10, 85, 30)).toBe(3)
   })
 })
