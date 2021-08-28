@@ -5,6 +5,20 @@ const cyclicRotation = (arr, k) => {
   return arr
 }
 
+const findOddNumber = (A) => {
+  let occurs = []
+  for (n of A) {
+    let o = occurs.find(o => o.key == n)
+    if (!o) {
+      occurs.push({key: n, count: 1})
+    } else {
+      o.count++
+    }
+  }
+  return occurs.find(o => o.count % 2 != 0).key
+}
+
 module.exports = {
-  cyclicRotation
+  cyclicRotation,
+  findOddNumber,
 }
