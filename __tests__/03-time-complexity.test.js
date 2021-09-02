@@ -19,5 +19,7 @@ describe('tapeEquilibrium', () => {
   test('tapeEquilibrium', () => {
     const arr = [3, 1, 2, 4, 3]
     expect(tapeEquilibrium(arr)).toBe(1)
+
+    expect(tapeEquilibrium([-1000, 1000])).toBe(2000)
   })
 })

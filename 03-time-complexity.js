@@ -16,7 +16,12 @@ const tapeEquilibrium = (A) => {
   let sum1 = 0
   let sum2 = 0
   let diff
+  let first = true
   for (let c of A) {
+    if (first) {
+      first = false
+      continue
+    }
     sum1 += c
     sum2 = total - sum1
     diff = Math.abs(sum1 - sum2)
