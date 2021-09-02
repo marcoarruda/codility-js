@@ -1,6 +1,6 @@
 const { describe, expect, test } = require('@jest/globals')
 
-const { frogJmp, permMissingElem } = require('../03-time-complexity')
+const { frogJmp, permMissingElem, tapeEquilibrium } = require('../03-time-complexity')
 
 describe('frogJmp', () => {
   test('frogJmp', () => {
@@ -12,5 +12,12 @@ describe('permMissingElem', () => {
   test('permMissingElem', () => {
     const arr = [2, 3, 1, 5]
     expect(permMissingElem(arr)).toBe(4)
+  })
+})
+
+describe('tapeEquilibrium', () => {
+  test('tapeEquilibrium', () => {
+    const arr = [3, 1, 2, 4, 3]
+    expect(tapeEquilibrium(arr)).toBe(1)
   })
 })
