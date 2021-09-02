@@ -16,16 +16,23 @@ const tapeEquilibrium = (A) => {
   let sum1 = 0
   let sum2 = 0
   let diff
-  let first = true
-  for (let c of A) {
-    if (first) {
-      first = false
-      continue
-    }
+  let i = 0
+  while (i < A.length-1) {
+    // get number
+    let c = A[i]
+
+    // define the two parts
     sum1 += c
     sum2 = total - sum1
+
+    // define the absolute diff
     diff = Math.abs(sum1 - sum2)
+
+    // check if this is the min diff
     minDiff = diff < minDiff ? diff : minDiff
+
+    // increment
+    i++
   }
 
   return minDiff
